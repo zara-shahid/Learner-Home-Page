@@ -1,0 +1,364 @@
+body {
+  overflow-x: hidden;
+  
+}
+
+
+/* Gradient navbar background */
+.navbar {
+  background: linear-gradient(90deg, #0066ff, #00ccff);
+}
+
+/* Make Learner bigger */
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Even spacing & underline hover */
+.navbar .nav-link {
+  margin: 0 10px;
+  position: relative;
+  color: #fff;
+}
+
+.navbar .nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Enroll Now button */
+.navbar .btn {
+  border-radius: 20px;
+  font-weight: 600;
+  color: #3b89fd;
+}
+
+.py-5{
+    background-color: #e9eef8;
+}
+
+/* .floating-card {
+  position: absolute;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 150px;
+  font-size: 0.9rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.floating-card i {
+  font-size: 1.5rem;
+  color: #0066ff;
+} */
+
+/* .card-1 {
+  top: 20%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.card-2 {
+  top: 60%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.card-3 {
+  top: 90%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+} */
+
+/* .floating-card {
+  position: absolute;
+  max-width: 120px;
+  background: white;
+  padding: .5rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  z-index: 2;
+}
+
+.floating-card.card-1 {
+  top: 10%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.floating-card.card-2 {
+  bottom: 20%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.floating-card.card-3 {
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+@keyframes float-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-left-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes float-diagonal {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-8px, -8px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.floating-card {
+  position: absolute;
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 0.85rem;
+  max-width: 120px;
+  text-align: center;
+}
+
+/* Card 1: gentle up-down */
+.floating-card.card-1 {
+  top: 10%;
+  left: 10%;
+  animation: float-up-down 4s ease-in-out infinite;
+}
+
+/* Card 2: slow left-right */
+.floating-card.card-2 {
+  bottom: 10%;
+  right: 10%;
+  animation: float-left-right 5s ease-in-out infinite;
+}
+
+/* Card 3: diagonal float */
+.floating-card.card-3 {
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: float-diagonal 6s ease-in-out infinite;
+}
+
+
+
+
+.text-primary {
+  color: #0066ff !important; /* or any shade of blue you like */
+}
+
+.btn {
+  border-radius: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+.btn-primary {
+  background-color: #0066ff;
+  border-color: #0066ff;
+}
+
+.btn-outline-primary {
+  color: #0066ff;
+  border-color: #0066ff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0066ff;
+  color: #fff;
+}
+
+.course-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+.badge.bg-primary{
+  border-radius: 17px;
+  padding: 10px 13px;
+}
+.badge.bg-secondary {
+  border-radius: 17px;
+  padding: 10px 13px;
+}
+
+
+.line-text::before,
+.line-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 1px;
+  background-color: #007bff;
+}
+
+.line-text::before {
+  left: -60px;
+}
+
+.line-text::after {
+  right: -60px;
+}
+
+.circle-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text-center.p-4.shadow-sm.h-100 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text-center.p-4.shadow-sm.h-100:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.text-center.p-4.shadow-sm.h-100:hover .circle-icon {
+  transform: scale(1.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+.instructor-img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #e9eef8 !important;
+  
+}
+.testimonials-section .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 100%;
+}
+
+.testimonials-section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-section .card .bi-star-fill,
+.testimonials-section .card .bi-star-half,
+.testimonials-section .card .bi-star {
+  font-size: 1.1rem;
+}
+
+/* Force equal height on testimonial cards */
+.testimonials-section .card .card-text {
+  min-height: 80px; /* adjust as needed */
+}
+
+/* Carousel student image */
+.testimonials-section .carousel-item img {
+  border: 3px solid #007bff;
+  padding: 2px;
+}
+
+/* Carousel text */
+.testimonials-section .carousel-item p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Optional: make carousel control buttons more visible */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+/* Optional: add some spacing between carousel and cards */
+.testimonials-section .carousel {
+  margin-top: 3rem;
+}
+
+.blog-img-wrapper {
+  overflow: hidden;
+  height: 200px; /* fixed height for all blog images */
+}
+
+.blog-img-wrapper img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.blog-card {
+  transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+
+
+
+
+
+
