@@ -51,9 +51,9 @@ git clone https://github.com/zara-shahid/Learner-Home-Page.git
 
 3️⃣ Customize text, images, and styles as needed.
 
-##📷 Demo
-![Screenshot of Learner Website](assets/image.PNG)
+📷 Demo
+assets/image.PNG
 
-##📄 License
+📄 License
 This project is for educational & portfolio purposes.
 Feel free to use and customize it for your own projects.
